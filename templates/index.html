@@ -1,0 +1,23 @@
+<!-- <!doctype html> -->
+<html>
+    <title>Spork</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <script type="text/javascript" src="{{url_for('static', filename='form_submit.js') }}"></script>
+    </head>
+    
+    <header>
+        <h2>Spork</h2>
+    </header>
+    
+    <body>
+        <div id="story">
+            {% for line in story %}
+                <div class=line>{{ line }}</div>
+            {% endfor %}
+        </div>
+        <form onSubmit="submit_input(this.form)">
+            <input type="text" id="player_input" autofocus>
+        </form>
+    </body>
+</html>

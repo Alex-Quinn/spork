@@ -1,0 +1,19 @@
+body, input
+{
+    background: #101010;
+    color: #339933;
+    font-family: courier;
+    font-size: 15px;
+}
+
+input
+{
+    background-color:transparent;
+    border: 0px solid;
+    color:#CCC;
+}
+
+input:focus
+{
+    outline: 0;
+}
