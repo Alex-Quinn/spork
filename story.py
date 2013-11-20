@@ -1,3 +1,4 @@
+import os
 from collections import deque
 
 class Story:
@@ -10,3 +11,9 @@ class Story:
 
     def get_story(self):
         return self.lines
+
+    def __str__(self):
+        output = ''
+        for line in self.lines:
+            output += line + '\n'
+        return output
