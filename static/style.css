@@ -1,16 +1,28 @@
 body, input
 {
+    width: 500;
+    margin-left: auto;
+    margin-right: auto;
     background: #101010;
     color: #339933;
     font-family: courier;
     font-size: 15px;
 }
 
+div.header
+{
+    text-align: center;
+}
+
+div.story
+{
+    text-align: left;
+}
+
 input
 {
-    background-color:transparent;
+    background-color: transparent;
     border: 0px solid;
-    color:#CCC;
 }
 
 input:focus

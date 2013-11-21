@@ -5,18 +5,20 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
     </head>
     
-    <header>
-        <h2>Spork</h2>
-    </header>
     
     <body>
+
+        <div class="header">
+            <h2>Spork</h2>
+        </div>
+        
         <div id="story">
             {% for line in story %}
                 <div class=line>{{ line }}</div>
             {% endfor %}
         </div>
         <form action="/" method="POST">
-            <input type="text" id="player_input" autofocus>
+            <input type="text" name="player_input" autofocus>
         </form>
     </body>
 </html>
